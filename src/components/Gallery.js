@@ -6,13 +6,13 @@ const Gallery = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/flowers')
+    fetch('/flowers')
       .then((res) => res.json())
       .then((data) => {
         setFlowers(data);
         setIsLoading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   }, []);
 
   return (

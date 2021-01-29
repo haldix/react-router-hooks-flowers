@@ -11,13 +11,15 @@ const Create = () => {
     if (!name || !url) return;
     const flower = { name, url };
 
-    fetch('http://localhost:8000/flowers', {
+    fetch('/flowers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(flower),
-    }).then(() => {
-      history.push('/gallery');
-    });
+    })
+      .then(() => {
+        history.push('/gallery');
+      })
+      .catch((err) => console.error(err));
   };
   return (
     <div className='create'>

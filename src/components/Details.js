@@ -5,7 +5,7 @@ const Details = () => {
   const { id } = useParams();
   const history = useHistory();
   const location = useLocation();
-  console.log(location);
+  console.log('location', location);
   const [flower, setFlower] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 

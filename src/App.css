@@ -40,13 +40,17 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: solid 2px transparent;
-  color: #fff;
+  color: #86d8f3;
   text-decoration: none;
   transition: border-bottom 0.3s ease-in;
 }
 
 .nav li a:hover {
   border-bottom: 2px solid currentColor;
+}
+
+.nav a.active {
+  color: #fff;
 }
 
 .home img {
@@ -61,6 +65,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.4rem;
   justify-items: center;
+}
+
+.get-info {
+  text-align: center;
+  font-weight: bold;
 }
 
 .card {

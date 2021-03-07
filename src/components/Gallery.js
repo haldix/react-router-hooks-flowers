@@ -18,6 +18,7 @@ const Gallery = () => {
   return (
     <div className='gallery'>
       <h1>Gallery of Flowers</h1>
+      <p className='get-info'>Click a photo for more information</p>
       <div className='container grid'>
         {isLoading ? (
           <h2>Loading...</h2>
